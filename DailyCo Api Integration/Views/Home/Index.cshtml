@@ -11,7 +11,6 @@
     <style>
         body {
             font-family: Karla, sans-serif;
-            background: -webkit-gradient(linear, left top, left bottom, from(#ddddff), to(#aaaaff)) fixed;
         }
     </style>
 }
@@ -20,17 +19,17 @@
 </h1>
 
 <div class="row" style="margin-bottom:20px;">
-    <button class="btn btn-primary" style="float:left;margin-right:20px;" onclick="mtgJoin()">join meeting</button>
-    <button class="btn btn-danger" style="float:left;" onclick="mtgLeave()">leave meeting</button>
+    <button class="btn btn-primary" style="float:left;margin-right:20px;" onclick="mtgJoin()">Join meeting</button>
+    <button class="btn btn-danger" style="float:left;" onclick="mtgLeave()">Leave meeting</button>
 </div>
 
 <div class="row">
-    <div id="mtg-frame" height="400" style="border:0;background-color:grey;"></div>
+    <div id="mtg-frame" height="400" style="height:400px;border:0;background-color:lightgrey;"></div>
 </div>
 
 <script>
     function mtgJoin() {
-        let callUrl = 'https://your-domain.daily.co/hello';
+        let callUrl = 'https://huddleafrica.daily.co/hello';
         if (!window.frame) {
             window.inp = document.getElementById('mtg-link');
             window.frame = window.DailyIframe.createFrame(
